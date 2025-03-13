@@ -4,8 +4,8 @@ import Utils
 
 # Load the image
 path = '1.png'
-width = 1300
-height = 1600    
+width = 500
+height = 900    
 image = cv2.imread(path)
 
 # Preprocess the image
@@ -31,11 +31,11 @@ if len(rectCon) > 0:
 
 imageBlank = np.zeros_like(image)
 imageArray = ([
-                # image,
-                # gray,
-                # blur,
-                # thresh,
-                # canny,
+                image,
+                gray,
+                blur,
+                thresh,
+                canny,
                 contourImg,
                 # imageBlank
                ])
